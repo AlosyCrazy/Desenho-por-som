@@ -50,13 +50,13 @@ function setup() {
 function draw() {
   if(drawApple == "set")
   {
-    for(var i = 1; i <= to_number; i++)
+    for(var i = 1; i <= number; i++)
     {
       x = Math.floor(Math.random() * 700);
       y = Math.floor(Math.random() * 400);
       Image(apple, x, y, 50, 50);
     }
-    document.getElementById("status").innerHTML = toNumber + " maçãs desenhadas";
+    document.getElementById("status").innerHTML = number + " maçãs desenhadas";
     speakData = number+" maçãs desenhadas";
     speak();
     drawApple = "";
